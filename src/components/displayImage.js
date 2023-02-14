@@ -8,7 +8,7 @@ function DisplayImage() {
 
     const getImages = async () => {
         try {
-            const url="https://imageuploadserversapta.herokuapp.com/api/";
+            const url="https://image-uploader-7z31.onrender.com/api/";
             const { data: res } = await Axios.get(url);
             setImages(res);
         }
