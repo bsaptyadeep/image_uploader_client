@@ -29,7 +29,7 @@ function UploadImage() {
             Axios.post("https://api.cloudinary.com/v1_1/saptya/image/upload", formData).then(
                 (Response) => {
                     setImageSelected(null);
-                    const url = "https://imageuploadserversapta.herokuapp.com/api/";
+                    const url = "https://image-uploader-7z31.onrender.com/api/";
                     const req = ({ ...data, image: Response.data.public_id });
                     Axios.post(url, req).then(() => {
 
